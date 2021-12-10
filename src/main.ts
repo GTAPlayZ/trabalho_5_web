@@ -10,6 +10,7 @@ async function bootstrap() {
     .setDescription('Simples CRUD para gerenciar website PlayZ')
     .setVersion('1.0')
     .addTag('gerenciamento')
+    .addBasicAuth()
     .build();
 
   const document = SwaggerModule.createDocument(app, options);
