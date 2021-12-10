@@ -1,4 +1,4 @@
-import { Servidor } from './servidor';
+import { Servidor } from './servidor.entity';
 
 describe('Servidor', () => {
   it('should be defined', () => {

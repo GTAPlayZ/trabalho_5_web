@@ -1,4 +1,4 @@
-import { Vip } from './vip';
+import { Vip } from './vip.entity';
 
 describe('Vip', () => {
   it('should be defined', () => {

@@ -1,6 +1,6 @@
 import { Controller } from '@nestjs/common';
 import { Crud } from '@nestjsx/crud';
-import { Suporte } from './suporte';
+import { Suporte } from './suporte.entity';
 import { SuporteService } from './suporte.service';
 @Crud({
   model: {

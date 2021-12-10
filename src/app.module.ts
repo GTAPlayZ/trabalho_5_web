@@ -7,7 +7,16 @@ import { ServidorModule } from './servidor/servidor.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
 
 @Module({
-  imports: [TypeOrmModule.forRoot(), SuporteModule, VipModule, ServidorModule],
+  imports: [
+    TypeOrmModule.forRoot({
+      type: 'sqljs',
+      entities: [__dirname + '/**/*.entity{.ts,.js}'],
+      synchronize: true,
+    }),
+    SuporteModule,
+    VipModule,
+    ServidorModule,
+  ],
   controllers: [AppController],
   providers: [AppService],
 })

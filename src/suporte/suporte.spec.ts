@@ -1,4 +1,4 @@
-import { Suporte } from './suporte';
+import { Suporte } from './suporte.entity';
 
 describe('Suporte', () => {
   it('should be defined', () => {

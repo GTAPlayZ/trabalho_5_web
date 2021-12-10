@@ -1,6 +1,6 @@
 import { Controller } from '@nestjs/common';
 import { Crud } from '@nestjsx/crud';
-import { Vip } from './vip';
+import { Vip } from './vip.entity';
 import { VipService } from './vip.service';
 @Crud({
   model: {

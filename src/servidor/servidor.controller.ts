@@ -1,6 +1,6 @@
 import { Controller } from '@nestjs/common';
 import { Crud } from '@nestjsx/crud';
-import { Servidor } from './servidor';
+import { Servidor } from './servidor.entity';
 import { ServidorService } from './servidor.service';
 
 @Crud({

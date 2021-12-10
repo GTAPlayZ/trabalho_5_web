@@ -1,9 +1,0 @@
-{
-    "type": "sqljs",
-    "entities": [
-        "dist/servidor/servidor.js",
-        "dist/suporte/suporte.js",
-        "dist/vip/vip.js"
-    ],
-    "synchronize": true
-}
