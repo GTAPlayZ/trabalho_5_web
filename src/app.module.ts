@@ -1,12 +1,13 @@
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { ServidorModule } from './servidor/servidor.module';
-import { VipModule } from './vip/vip.module';
 import { SuporteModule } from './suporte/suporte.module';
+import { VipModule } from './vip/vip.module';
+import { ServidorModule } from './servidor/servidor.module';
+import { TypeOrmModule } from '@nestjs/typeorm';
 
 @Module({
-  imports: [ServidorModule, VipModule, SuporteModule],
+  imports: [TypeOrmModule.forRoot(), SuporteModule, VipModule, ServidorModule],
   controllers: [AppController],
   providers: [AppService],
 })
