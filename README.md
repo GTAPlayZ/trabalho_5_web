@@ -101,7 +101,16 @@ nest generate controller suporte && \
 nest generate service suporte && \
 nest generate class suporte/suporte
 
+
+npm install -s @nestjs/swagger swagger-ui-express
+
 ```
 
 
+https://nestjs.com/
 
+https://typeorm.io/
+
+https://sql.js.org/documentation/
+
+https://swagger.io/
